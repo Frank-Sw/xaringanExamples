@@ -1,0 +1,108 @@
+---
+title: "A Simple Example"
+subtitle: "A basic modification of Emi Tanaka example"
+author: "John Minter"
+date: "June 29, 2018"
+output:
+  xaringan::moon_reader:
+    css: [./css/tanaka.css]
+    lib_dir: libs
+    seal: false 
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      #autoplay: 30000 #countdown: 
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+class: title-slide
+
+<br><br>
+# A Simple Example
+
+### **John Minter**
+
+### June 28, 2018
+
+<br>
+
+[.textshadow[.font120[`r anicon::faa("twitter", animate="float", color="white", rtext=".white[@jrminter]")`]]](http://twitter.com/jrminter)
+
+<br><br><br>
+---
+
+class: center, middle
+
+
+```{r cars}
+summary(cars)
+```
+
+---
+
+class: center, middle
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk
+to prevent printing of the R code that generated the plot.
+
+---
+class: center, middle
+
+### The distribution of weights from a simulated population
+
+```{r endWithANull, echo=FALSE, fig.height=6.5, fig.width=14.5}
+library(ggplot2)
+set.seed(42)
+df <- data.frame(gender = factor(rep(c("F", "M"), each = 200)),
+                 weight = round(c(rnorm(200, mean = 55, sd=5),
+                                  rnorm(200, mean = 65, sd=5))))
+txtSize <- 16
+plt <- ggplot(df, aes(x=weight, fill=gender)) +
+       geom_density(alpha=0.5) +
+       geom_hline(yintercept = 0, colour='white') +
+       # ggtitle("Weight as a function of gender") +
+       theme(axis.text=element_text(size=txtSize),
+             axis.title=element_text(size=txtSize),
+             legend.title=element_text(size=txtSize),
+             legend.text=element_text(size=txtSize),
+             plot.title=element_text(hjust = 0.5)) +
+       # geom_histogram() +
+       NULL
+print(plt)
+```
+
+---
+
+class: title-slide
+
+<br><br><br><br>
+
+# .textshadow[.font150[Thank you!]]
+<br><br><br>
+
+
+## .textshadow[**John Minter**]
+
+[.textshadow[.font150[.white[`r anicon::faa("twitter", animate="float")` @jrminter]]]](http://twitter.com/jrminter)
+
+.textshadow[.font150[.white[`r anicon::faa("envelope", animate="shake", anitype="parent-hover", rtext="jrminter@gmail.com")`]]]
+
+
+[.textshadow[.font150[`r anicon::faa("github", animate="ring", anitype="parent-hover", color="white", rtext=".white[code available at github]")`]]](https://github.com/jrminter)
+
+
