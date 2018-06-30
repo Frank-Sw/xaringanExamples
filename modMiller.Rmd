@@ -1,8 +1,8 @@
 ---
 title: "Steve Miller's Presentation Modified by JRM"
-subtitle: "POSC 0000 -- It Would Be Cool If This Were an Actual Class Presentation"
-author: "Steven V. Miller<br /> <br /> <br /> Department of Political Science"
-institute: Department of Political Science
+subtitle: "A test of a custom Xaringen slide presentation"
+author: "John Minter<br /> <br /> <br />"
+institute: Minter Analytics
 output:
   xaringan::moon_reader:
     css: ["default", "./css/minter-mod.css"]

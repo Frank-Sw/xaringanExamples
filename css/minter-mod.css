@@ -1,5 +1,18 @@
 /* Let's load some fonts */
 
+/*
+
+Colors
+
+#000099 - 30% blue (dark blue)
+#ff0000 - 50% red  (mid red) 
+#990000 - a darker red-brown
+#fafafa - 98% white
+#d6d6d6 - light gray (84% white)
+
+*/
+
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
@@ -49,7 +62,7 @@ div.remark-slide-container h3 {
 
 .title-slide {
     background-color: #fff;
-  background-image: url(/home/steve/Dropbox/teaching/clemson-academic.png);
+    background-image: url(../figures/MA-wide.png);
     background-position: center bottom 170px;
     background-size: 30%;
     border-bottom: 0px solid  #000099;
@@ -84,8 +97,8 @@ div.remark-slide {
 /* Let's play with .inverse and a new class, .fullscale, a little more */
 
 .inverse {
-    color: #fafafa;
-    text-shadow: 0 0 0px #333;
+    color: #fafafa; /* #fafafa is 98% white */
+    text-shadow: 0 0 0px #333; /* with a 20% white dark black background*/
 }
 
 div.remark-slide-container .fullscale {
