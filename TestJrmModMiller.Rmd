@@ -1,0 +1,58 @@
+---
+title: "John's Presentatiom"
+subtitle: "A subtitle"
+author: "John Minter<br /> <br /> <br />"
+institute: Minter Analytics
+output:
+  xaringan::moon_reader:
+    css: ["default", "./css/minter-mod.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      #autoplay: 30000 #countdown: 
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(dev = 'svg')
+options(device = function(file, width, height) {
+  svg(tempfile(), width = width, height = height)
+})
+library(tidyverse)
+library(pander)
+```
+
+# Use `NULL` for better editing of `ggplot`
+
+
+```{r endWithANull, fig.width=9.5}
+library(ggplot2)
+set.seed(42)
+df <- data.frame(gender = factor(rep(c("F", "M"), each = 200)),
+                 weight = round(c(rnorm(200, mean = 55, sd=5),
+                                  rnorm(200, mean = 65, sd=5))))
+
+plt <- ggplot(df, aes(x=weight, fill=gender)) +
+       geom_density(alpha=0.5) +
+       geom_hline(yintercept = 0, colour='white') +
+       ggtitle("Weight as a function of gender") +
+       theme(axis.text=element_text(size=12),
+             axis.title=element_text(size=12),
+             plot.title=element_text(hjust = 0.5)) +
+       # geom_histogram() +
+       NULL
+```
+
+
+---
+
+# Our final plot
+
+```{r printPlt, fig.width=11, fig.height=5.5, echo=FALSE}
+print(plt)
+```
+
+
