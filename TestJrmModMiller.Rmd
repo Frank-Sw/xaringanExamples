@@ -55,4 +55,12 @@ plt <- ggplot(df, aes(x=weight, fill=gender)) +
 print(plt)
 ```
 
+---
 
+class: middle
+
+# Test font sizes
+
+.font200[Thank you!]
+
+.font45[Test]
