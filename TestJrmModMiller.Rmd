@@ -5,7 +5,8 @@ author: "John Minter"
 institute: Minter Analytics
 output:
   xaringan::moon_reader:
-    css: "./css/basic.css"
+    # css: "./css/basic.css"
+    css: ["./css/default.css", "./css/jrm.css", "./css/jrm-fonts.css"]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -55,12 +56,3 @@ plt <- ggplot(df, aes(x=weight, fill=gender)) +
 print(plt)
 ```
 
----
-
-class: middle
-
-# Test font sizes
-
-.font200[Thank you!]
-
-.font45[Test]

@@ -1,0 +1,26 @@
+/*
+
+Overides -Rladies Template
+
+#003366 = darker blue
+#0000cc = lighter blue
+rgba(0, 0, 204, 0.3) = ##0000cc with 0.3
+
+*/
+
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: #0000cc;
+}
+a, a > code {
+  color: #003366;
+}
+.remark-code-line-highlighted { background-color: rgba(0, 0, 204, 0.3); }
+
+.inverse {
+  background-color: #0000cc;
+}
+.inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, inverse a > code {
+  color: #fff;
+}
