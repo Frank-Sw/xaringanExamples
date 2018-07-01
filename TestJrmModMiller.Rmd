@@ -1,11 +1,11 @@
 ---
-title: "John's Presentatiom"
-subtitle: "A subtitle"
-author: "John Minter<br /> <br /> <br />"
+title: "John's Presentation"
+subtitle: "2018-06-30"
+author: "John Minter"
 institute: Minter Analytics
 output:
   xaringan::moon_reader:
-    css: ["default", "./css/minter-mod.css"]
+    css: "./css/basic.css"
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -30,11 +30,12 @@ library(pander)
 
 ```{r endWithANull, fig.width=9.5}
 library(ggplot2)
+# Simulate a dataset with 2 normal distributions with different means
 set.seed(42)
 df <- data.frame(gender = factor(rep(c("F", "M"), each = 200)),
                  weight = round(c(rnorm(200, mean = 55, sd=5),
                                   rnorm(200, mean = 65, sd=5))))
-
+# generate the plot
 plt <- ggplot(df, aes(x=weight, fill=gender)) +
        geom_density(alpha=0.5) +
        geom_hline(yintercept = 0, colour='white') +
@@ -45,7 +46,6 @@ plt <- ggplot(df, aes(x=weight, fill=gender)) +
        # geom_histogram() +
        NULL
 ```
-
 
 ---
 
