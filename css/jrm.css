@@ -2,7 +2,7 @@
 
 Overides -Rladies Template
 
-#003366 = darker blue
+#000066 = darker blue
 #0000cc = lighter blue
 rgba(0, 0, 204, 0.3) = ##0000cc with 0.3
 
@@ -11,10 +11,10 @@ rgba(0, 0, 204, 0.3) = ##0000cc with 0.3
 
 h1, h2, h3 {
   font-weight: normal;
-  color: #0000cc;
+  color: #000066;
 }
 a, a > code {
-  color: #003366;
+  color: #000066;
 }
 .remark-code-line-highlighted { background-color: rgba(0, 0, 204, 0.3); }
 
@@ -23,4 +23,12 @@ a, a > code {
 }
 .inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, inverse a > code {
   color: #fff;
+}
+
+.title-slide {
+  background-color: #000066; /*dk blue*/
+}
+
+.title-slide h1 {
+  color: #ff0000;
 }

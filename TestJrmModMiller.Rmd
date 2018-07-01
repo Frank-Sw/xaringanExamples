@@ -1,6 +1,6 @@
 ---
 title: "John's Presentation"
-subtitle: "2018-06-30"
+subtitle: "2018-06-30, Last Modified: 2018-07-01"
 author: "John Minter"
 institute: Minter Analytics
 output:
