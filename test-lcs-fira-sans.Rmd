@@ -1,0 +1,93 @@
+---
+title: "How can I use R to get my work done?"
+subtitle: "Lets examine a few use cases..."
+author: "LCS Statistics"
+date: "2018-07-04"
+output:
+  xaringan::moon_reader:
+    css: ["default","./css/lcs-fira-sans.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true 
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+<div class="my-logo-left"></div>
+
+# Use R to summarize data
+
+```{r cars}
+summary(cars)
+```
+
+---
+
+<div class="my-logo-left"></div>
+
+# Use R to include plots
+
+```{r pressure, fig.width= 11.0, fig.height=5.0, echo=FALSE, fig.align='center'}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk
+to prevent printing of the R code that generated the plot.
+
+---
+
+<div class="my-logo-left"></div>
+
+# Use R to analyze a distribution of weights
+
+Make a dataframe with data simulating a population of 200 males and 200 females
+
+```{r make distribution, comment=NA}
+set.seed(42)
+df <- data.frame(gender = factor(rep(c("F", "M"), each = 200)),
+                 weight = round(c(rnorm(200, mean = 55, sd=5),
+                                  rnorm(200, mean = 65, sd=5))))
+
+summary(df)
+```
+
+---
+
+<div class="my-logo-left"></div>
+
+# Use R to plot the results
+
+```{r endWithANull, echo=FALSE, fig.height=6.0, fig.width=14.5}
+library(ggplot2)
+txtSize <- 16
+plt <- ggplot(df, aes(x=weight, fill=gender)) +
+       geom_density(alpha=0.5) +
+       geom_hline(yintercept = 0, colour='white') +
+       # ggtitle("Weight as a function of gender") +
+       theme(axis.text=element_text(size=txtSize),
+             axis.title=element_text(size=txtSize),
+             legend.title=element_text(size=txtSize),
+             legend.text=element_text(size=txtSize),
+             plot.title=element_text(hjust = 0.5)) +
+       # geom_histogram() +
+       NULL
+print(plt)
+```
+
+---
+
+<div class="my-logo-left"></div>
+
+# .font120[Thank you!]
+
+## **John Minter**
+
+.font200[.blue[`r anicon::faa("twitter", animate="float")` @jrminter ]].font200[ (http://twitter.com/jrminter)]
+
+.font200[.blue[`r anicon::faa("envelope", animate="float")` jrminter@gmail.com ](].font200[.red[ jrminter@gmail.com])]
+
+.font200[.blue[`r anicon::faa("github", animate="float")` code available at github ]].font200[(.red[https://github.com/jrminter])]
