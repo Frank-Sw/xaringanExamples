@@ -8,7 +8,7 @@
 # *_files directories
 *_files
 
-# 
+# don't track the default.css in lib/remark-css
 libs/remark-css/default.css
 
 # rendered html files
