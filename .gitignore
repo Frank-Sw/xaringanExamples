@@ -8,6 +8,9 @@
 # *_files directories
 *_files
 
+# 
+libs/remark-css/default.css
+
 # rendered html files
 *.html
 
