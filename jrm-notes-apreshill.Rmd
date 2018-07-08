@@ -1,0 +1,37 @@
+---
+title: "Notes on css etc from apreshill ohsu"
+author: "John  Minter"
+date: "2018-07-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Questions from `ohsu-fonts.css`
+
+**eot**: The Embedded OpenType format, which enables designers to
+specify EOT fonts for use on defined Web pages, was developed by
+Microsoft and made available as part of the Internet Explorer([R])
+browser. [source](https://acronyms.thefreedictionary.com/EOT).
+
+**woff2**: Google Chrome Developers says:
+
+> The new WOFF 2.0 Web Font compression format offers a 30% average gain
+> over WOFF 1.0 (up to 50%+ in some cases). WOFF 2.0 is available since
+> Chrome 36 and Opera 23. [source](https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a)
+
+# Colors from `ohsu.css`
+
+```{r, echo=FALSE, fig.cap="Color descriptions"}
+library(pander)
+df <- read.csv('./dat/colors.csv',  header=TRUE, sep=",")
+panderOptions("table.split.table", Inf)
+panderOptions("table.alignment.rownames", "left")
+panderOptions("table.alignment.default", "left")
+
+pander(df)
+
+```
+
