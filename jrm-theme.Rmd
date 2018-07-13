@@ -5,7 +5,7 @@ author: "John Minter"
 date: "2018-07-13"
 output:
   xaringan::moon_reader:
-    css: ["./css/jrm-simple-fonts.css", "./css/jrm.css"]
+    css: ["./css/jrm-theme.css"]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -16,8 +16,6 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
-
-class: inverse
 
 # Statistics education is changing...
 
@@ -41,7 +39,6 @@ class: inverse
   - The ability to do things machines can’t do!
 
 ---
-class: inverse
 
 # Minimizing Cognitive Demands
 
@@ -55,14 +52,13 @@ class: inverse
      <span style="color:#99ccff"> Spend it wisely </span>!
 
 ---
-class: inverse
 
 # Main strategy
 
 1. First establish big picture visions and their value
 
    - Aiming for retention of
-     <span style="color:#99ccff">what matters most</span>...
+      <span style="color:#99ccff">what matters most</span>...
 
 --
 
@@ -77,7 +73,6 @@ class: inverse
      as the opportunity arises</span>.
 
 ---
-class: inverse
 
 # Use R to summarize data
 
@@ -91,8 +86,6 @@ summary(cars)
 
 ---
 
-class: inverse
-
 # Use R base graphics to include plots
 
 ```{r pressure, fig.width= 11.0, fig.height=5.0, echo=FALSE, fig.align='center'}
@@ -103,8 +96,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk
 to prevent printing of the R code that generated the plot.
 
 ---
-
-class: inverse
 
 # Use R to analyze a distribution of weights
 
@@ -120,8 +111,6 @@ summary(df)
 ```
 
 ---
-
-class: inverse
 
 # Use ggplot2 to plot the results
 
@@ -144,8 +133,6 @@ print(plt)
 
 ---
 
-class: inverse
-
 # .blue[Thank you!]
 
 .font200[.blue[Contact me...]]
@@ -155,6 +142,7 @@ class: inverse
 .font150[.yellow[`r anicon::faa("envelope", animate="float")` jrminter@gmail.com ]]
 
 .font150[.yellow[`r anicon::faa("github", animate="float")` code available at github ]].font150[(.blue[https://github.com/jrminter])]
+
 
 
 
