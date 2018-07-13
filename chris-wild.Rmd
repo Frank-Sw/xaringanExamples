@@ -1,0 +1,80 @@
+---
+title: "What is Important"
+subtitle: "Points from Chris Wild..."
+author: "John Minter ed Chris Wild"
+date: "2018-07-12"
+output:
+  xaringan::moon_reader:
+    css: ["default","./css/jrm-big-fira-sans.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+<div class="my-logo-left"></div>
+
+# Long‐term value
+
+1. Technology is disrupting how we do things at an increasing rate.
+
+--
+
+  - Anything important that can be automated will be automated.
+
+--
+
+  - Anything that is purely procedural can be automated.
+  
+--
+
+2. So what should we most want for our students?
+
+--
+
+  - The ability to do things machines can’t do!
+  
+---
+
+<div class="my-logo-left"></div>
+
+# Minimizing Cognitive Demands
+
+1. The average person can only hold two to six pieces of information in their attention at once!
+
+   - Source: Cowan, 2000
+
+--
+
+   - Moral: Short‐term memory is a scarce resource.    
+     <span style="color:#cc0000"> Spend it wisely </span>!
+
+---
+
+<div class="my-logo-left"></div>
+
+# Main strategy
+
+1. First establish big picture visions and their value
+
+   - Aiming for retention of
+     <span style="color:#cc0000">what matters most</span>...
+
+--
+
+2. And then...
+
+   > ...and the vision that was planted in my brain still remains...
+   Paul Simon, "The Sound of Silence"
+
+--
+
+   - Then backfill details later <span style="color:#cc0000">
+     as the opportunity arises</span>.
+
