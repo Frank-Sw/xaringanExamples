@@ -20,6 +20,18 @@ a, a > code {
   text-decoration: none;
 }
 
+
+ol {
+  color: #99ccff; 
+  font-size: 25pt;
+}
+
+ul {
+  font-size: 25pt;
+  color: #ffffff;
+}
+
+
 /* slightly lower and bigger than default */
 .footnote {
   position: absolute;
