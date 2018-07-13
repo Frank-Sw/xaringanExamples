@@ -1,0 +1,174 @@
+/* 
+jrm-jbs.css
+
+Author: J. R. Minter based on a theme by Jenny Bryan
+
+A css for a simple Xaringan slide presentation that overides
+the default.css file. We use the Roboto fonts. This is inspired
+by Jenny Bryan's Keynote presentationS
+
+Modification History
+
+   Date     Who                      Comments
+----------  ---  ------------------------------------------------------
+2018-07-13  JRM  Initial implementation with Roboto
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Roboto';
+  color: #000066; /*blue*/
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  color: #000066; /*blue*/
+  font-weight: normal;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  color: #000000; /*black*/
+  font-weight: normal;
+  font-size: 35px;
+}
+
+
+@page { margin: 0; }
+
+.inverse {
+  background-color: #c1b42a;
+  color: #ffffff;
+}
+
+
+
+.title-slide {
+  background-color: #343838;
+  background-image: url(../figures/MA-wide.png);
+  background-size: 25%;
+  background-position: center bottom 100px;
+  border-bottom: 0px solid  #522D80;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1 {
+  margin-top: -100px;
+  color: #000066; /*blue*/
+}
+.title-slide h2 {
+  margin-top: -20px;
+  color: #cc0000; /*red*/
+}
+
+.title-slide h3 {
+  margin-top: -20px;
+  color: #000; /*red*/
+}
+
+.inverse {
+  background-color: #343838;
+  color: #FFFFFF;
+}
+
+.inverse .title-slide{
+  color: #ffffff;
+}
+
+.inverse .title-slide h1 {
+  margin-top: -100px;
+  font-size: 60px;
+  color: #c1b42a; /*yellowish*/
+}
+
+.inverse .title-slide h2, h3, h4 {
+  color: #ffffff; /*yellowish*/
+}
+
+
+
+
+.inverse code{
+  color: #FFFFFF;
+}
+
+.inverse h1 {
+  color: #c1b42a; /*white*/
+}
+
+.inverse h2, h3, h4 {
+  color: #ffffff; /*white*/
+}
+
+.inverse a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.remark-slide-number {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.my-logo-left {
+content: "";
+    position: absolute;
+    top:   600px;
+    left:   70px;
+    height: 50px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../figures/MA-wide.png)
+}
+
+
+/* or you can be more specific */
+.font10 , .code10 .remark-code, .code10 .remark-inline-code{ font-size: 10%; }
+.font20 , .code20 .remark-code, .code20 .remark-inline-code{ font-size: 20%; }
+.font30 , .code30 .remark-code, .code30 .remark-inline-code{ font-size: 30%; }
+.font40 , .code40 .remark-code, .code40 .remark-inline-code{ font-size: 40%; }
+.font50 , .code50 .remark-code, .code50 .remark-inline-code{ font-size: 50%; }
+.font60 , .code60 .remark-code, .code60 .remark-inline-code{ font-size: 60%; }
+.font70 , .code70 .remark-code, .code70 .remark-inline-code{ font-size: 70%; }
+.font75 , .code75 .remark-code, .code75 .remark-inline-code{ font-size: 75%; }
+.font80 , .code80 .remark-code, .code80 .remark-inline-code{ font-size: 80%; }
+.font90 , .code90 .remark-code, .code90 .remark-inline-code{ font-size: 90%; }
+.font110, .code110 .remark-code, .code110 .remark-inline-code{ font-size: 110%; }
+.font120, .code120 .remark-code, .code120 .remark-inline-code{ font-size: 120%; }
+.font130, .code130 .remark-code, .code130 .remark-inline-code{ font-size: 130%; }
+.font140, .code140 .remark-code, .code140 .remark-inline-code{ font-size: 140%; }
+.font150, .code150 .remark-code, .code150 .remark-inline-code{ font-size: 150%; }
+.font160, .code160 .remark-code, .code160 .remark-inline-code{ font-size: 160%; }
+.font170, .code170 .remark-code, .code170 .remark-inline-code{ font-size: 170%; }
+.font175, .code175 .remark-code, .code175 .remark-inline-code{ font-size: 175%; }
+.font180, .code180 .remark-code, .code180 .remark-inline-code{ font-size: 180%; }
+.font190, .code190 .remark-code, .code190 .remark-inline-code{ font-size: 190%; }
+.font200, .code200 .remark-code, .code200 .remark-inline-code{ font-size: 200%; }
+.font45{ font-size: 45px; }
+
+.jbc-yellow{color: #c1b42a;}
+.black { color: black; }
+.white { color: white; }
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.orange { color: orange; }
+.purple { color: #f441b8; }
+.gray { color: #d3cdd1; }
+

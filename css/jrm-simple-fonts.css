@@ -1,0 +1,31 @@
+/* 
+jrm-simple-fonts.css
+
+Author: J. R. Minter
+
+A css for a simple Xaringan slide presentation that overides
+the default.css file. We use the Fira Sans fonts.
+
+Modification History
+
+   Date     Who                      Comments
+----------  ---  ------------------------------------------------------
+2018-07-13  JRM  Initial implementation with Fira Sans
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body { font-family: 'Fira Sans', sans-serif;
+       font-size: 25px;
+}
+
+h1, h2, h3 {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
