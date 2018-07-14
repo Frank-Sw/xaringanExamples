@@ -1,0 +1,167 @@
+---
+title: "How can I use R to get my work done?"
+subtitle: "Lets examine a few use cases..."
+author: "John Minter"
+date: "2018-07-13"
+output:
+  xaringan::moon_reader:
+    css: ["./css/lcs-theme.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true 
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Chris Wiggins: Statistics education is changing...
+
+--
+
+1. Technology is disrupting how we do things at an increasing rate.
+
+--
+  - Anything important that can be automated will be automated.
+
+--
+
+  - Anything that is purely procedural can be automated.
+  
+--
+
+2. So what should we most want for our students?
+
+--
+
+  - The ability to do things machines can’t do!
+
+---
+
+# Chris Wiggins: Minimizing Cognitive Demands
+
+1. The average person can only hold two to six pieces of information in their attention at once!
+
+   - Source: Cowan, 2000
+
+--
+
+   - Moral: Short‐term memory is a scarce resource.    
+     <span style="color:#99ccff"> Spend it wisely </span>!
+
+---
+
+# Chris Wiggins: Main strategy
+
+1. First establish big picture visions and their value
+
+  - Aim for retention of
+    <span style="color:#99ccff">what matters most</span>...
+  - > ...and the vision that was planted in my brain still remains...    
+    Paul Simon, "The Sound of Silence"
+--
+
+2. Then backfill details later <span style="color:#99ccff">
+    as the opportunity arises</span>.
+
+---
+
+# Use R to summarize data
+
+```{r cars, comment=NA}
+summary(cars)
+```
+
+---
+
+# Use R base graphics to include plots
+
+```{r pressure, fig.width= 11.0, fig.height=5.0, echo=FALSE, fig.align='center'}
+plot(pressure)
+```
+
+.font120[Note that the `echo = FALSE` parameter was added to the code chunk
+to prevent printing of the R code that generated the plot.]
+
+---
+
+# Use R to analyze a distribution of weights
+
+.font120[Make a dataframe with data simulating a population of 200 males and 200 females]
+
+```{r make distribution, comment=NA}
+set.seed(42)
+df <- data.frame(gender = factor(rep(c("F", "M"), each = 200)),
+                 weight = round(c(rnorm(200, mean = 55, sd=5),
+                                  rnorm(200, mean = 65, sd=5))))
+
+summary(df)
+```
+
+---
+
+# Use ggplot2 to plot the results
+
+```{r endWithANull, echo=FALSE, fig.height=6.0, fig.width=14.5}
+library(ggplot2)
+txtSize <- 16
+plt <- ggplot(df, aes(x=weight, fill=gender)) +
+       geom_density(alpha=0.5) +
+       geom_hline(yintercept = 0, colour='white') +
+       # ggtitle("Weight as a function of gender") +
+       theme(axis.text=element_text(size=txtSize),
+             axis.title=element_text(size=txtSize),
+             legend.title=element_text(size=txtSize),
+             legend.text=element_text(size=txtSize),
+             plot.title=element_text(hjust = 0.5)) +
+       # geom_histogram() +
+       NULL
+print(plt)
+```
+
+---
+
+# An example from Yihui Xie
+
+.pull-left[
+- a bullet
+- another bullet
+]
+
+.pull-right[
+- a bullet
+- another bullet
+]
+
+---
+
+# Quotes
+
+.pull-left[.font150[
+> Not having all of the bells and whistles that Keynote and PowerPoint do **forces you to present your work simply**, and I think that when you do this properly, **it is very powerful**.    
+-- Nick Tierney]
+]
+
+.pull-right[.font150[
+> **Less is more**.    
+-- Yihui Xie]
+]
+
+---
+
+# .blue[Thank you!]
+
+.font200[.blue[Contact me...]]
+
+.font150[.yellow[`r anicon::faa("twitter", animate="float")` @jrminter ]]
+
+.font150[.yellow[`r anicon::faa("envelope", animate="float")` jrminter@gmail.com ]]
+
+.font150[.yellow[`r anicon::faa("github", animate="float")` code available at github ]].font150[(.blue[https://github.com/jrminter])]
+
+
+
+
+
