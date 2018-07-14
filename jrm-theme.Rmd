@@ -82,14 +82,14 @@ summary(cars)
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk
-to prevent printing of the R code that generated the plot.
+.font120[Note that the `echo = FALSE` parameter was added to the code chunk
+to prevent printing of the R code that generated the plot.]
 
 ---
 
 # Use R to analyze a distribution of weights
 
-Make a dataframe with data simulating a population of 200 males and 200 females
+.font120[Make a dataframe with data simulating a population of 200 males and 200 females]
 
 ```{r make distribution, comment=NA}
 set.seed(42)
@@ -120,6 +120,34 @@ plt <- ggplot(df, aes(x=weight, fill=gender)) +
        NULL
 print(plt)
 ```
+
+---
+
+# An example from Yihui Xie
+
+.pull-left[
+- a bullet
+- another bullet
+]
+
+.pull-right[
+- a bullet
+- another bullet
+]
+
+---
+
+# Quotes
+
+.pull-left[.font150[
+> Not having all of the bells and whistles that Keynote and PowerPoint do **forces you to present your work simply**, and I think that when you do this properly, **it is very powerful**.    
+-- Nick Tierney]
+]
+
+.pull-right[.font150[
+> **Less is more**.    
+-- Yihui Xie]
+]
 
 ---
 
