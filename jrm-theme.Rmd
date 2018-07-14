@@ -17,7 +17,7 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-# Statistics education is changing...
+# Chris Wiggins: Statistics education is changing...
 
 --
 
@@ -40,7 +40,7 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Minimizing Cognitive Demands
+# Chris Wiggins: Minimizing Cognitive Demands
 
 1. The average person can only hold two to six pieces of information in their attention at once!
 
@@ -53,32 +53,22 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Main strategy
+# Chris Wiggins: Main strategy
 
 1. First establish big picture visions and their value
 
-   - Aiming for retention of
-      <span style="color:#99ccff">what matters most</span>...
-
+  - Aim for retention of
+    <span style="color:#99ccff">what matters most</span>...
+  - > ...and the vision that was planted in my brain still remains...    
+    Paul Simon, "The Sound of Silence"
 --
 
-2. And then...
-
-   > ...and the vision that was planted in my brain still remains...
-   Paul Simon, "The Sound of Silence"
-
---
-
-   - Then backfill details later <span style="color:#99ccff">
-     as the opportunity arises</span>.
+2. Then backfill details later <span style="color:#99ccff">
+    as the opportunity arises</span>.
 
 ---
 
 # Use R to summarize data
-
-## h2
-
-### h3
 
 ```{r cars, comment=NA}
 summary(cars)
