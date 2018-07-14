@@ -2,7 +2,7 @@
 title: "How can I use R to get my work done?"
 subtitle: "Lets examine a few use cases..."
 author: "John Minter"
-date: "2018-07-13"
+date: "2018-07-14"
 output:
   xaringan::moon_reader:
     css: ["./css/lcs-theme.css"]
