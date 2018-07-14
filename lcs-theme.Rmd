@@ -1,6 +1,6 @@
 ---
-title: "How can I use R to get my work done?"
-subtitle: "Lets examine a few use cases..."
+title: "Preparing LCS Statistics Students for the future"
+subtitle: "Developing critical thinking & and analysis skills"
 author: "John Minter"
 date: "2018-07-14"
 output:
@@ -17,34 +17,32 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-# Chris Wiggins: Statistics education is changing...
+# Statistics education is changing...
 
 --
 
-1. Technology is disrupting how we do things at an increasing rate.
+1. Technology is .blue[disrupting] how we do things at an    
+   .blue[increasing rate].
 
---
-  - Anything important that can be automated will be automated.
+   - Anything important that can be automated .yellow[will be automated].
 
---
-
-  - Anything that is purely procedural can be automated.
-  
---
-
-2. So what should we most want for our students?
+   - Anything that is purely procedural .yellow[can be automated].
 
 --
 
-  - The ability to do things machines can’t do!
+2. So what should we .blue[want most] for our students?
 
+   - The .yellow[ability to do things machines can’t do]!
+
+.font130[Source: .blue[Chris Wiggins], Prof. of Statistics, Univ of. Auckland (July 2018)]
 ---
 
 # Chris Wiggins: Minimizing Cognitive Demands
 
-1. The average person can only hold two to six pieces of information in their attention at once!
+1. The average person can only hold .blue[two to six]
+   pieces of information in their attention at once!
 
-   - Source: Cowan, 2000
+   - Source: N. Cowan, *Behavioral and Brain Sciences*, **24**, 87-185, (2000).
 
 --
 
@@ -57,14 +55,29 @@ options(htmltools.dir.version = FALSE)
 
 1. First establish big picture visions and their value
 
+  - <span style="color:#99ccff">Long-term retention</span>
+    from college statistics courses has
+    been <span style="color:#99ccff">poor</span>.
+
   - Aim for retention of
-    <span style="color:#99ccff">what matters most</span>...
-  - > ...and the vision that was planted in my brain still remains...    
-    Paul Simon, "The Sound of Silence"
+    <span style="color:#cccc00">what matters most</span>...
 --
 
-2. Then backfill details later <span style="color:#99ccff">
+2.  Backfill details later <span style="color:#99ccff">
     as the opportunity arises</span>.
+
+---
+
+# Countermeasures
+
+1.  Use relevant data sets to encourage exploration,
+    critical analysis, and communicating understanding.
+
+2.  Use modern Open Source software that students are
+    likely to use in college and in their jobs.
+
+3.  Use reproducible workflows that encourage sharing
+    and reduce errors.
 
 ---
 
