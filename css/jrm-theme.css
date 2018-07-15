@@ -84,18 +84,21 @@ a, a > code {
   color: #343838;
 }
 
-ol{
-  font-size: 40px;
+.inverse ol, ol{
+  font-size: 35px;
+/*  padding-bottom: 5px; */
 }
 
-ul{
+.inverse ul, ul{
   font-size: 30px;
+/*  padding-bottom: 5px; */
 }
 
 
 .inverse h1, .inverse h2, .inverse h3 {
   color: #343838;
 }
+
 .title-slide{
   background-image: url(../figures/MA-wide.png);
   background-position: 9% 90%;
